@@ -1,0 +1,48 @@
+@use "../abstracts" as *;
+
+.button {
+    --_gap: var(--gap, #{$size-6});
+    --_pad-inline: var(--pad-inline, 40px);
+    --_pad-block: var(--pad-block, 20px);
+    --_border: var(--border, 2px solid transparent);
+    --_color: var(--color, #{$color-white});
+    --_background-color: var(--background-color, #{$color-primary});
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $font-size-8;
+    font-weight: $font-weight-600;
+    line-height: 1;
+    gap: var(--_gap);
+    padding-inline: var(--_pad-inline);
+    padding-block: var(--_pad-block);
+    border-radius: $radius-5;
+    transition: color $transition-duration-slow, background-color $transition-duration-slow;
+    border: var(--_border);
+    background-color: var(--_background-color);
+    color: var(--_color);
+    cursor: pointer;
+
+    &:is(:hover, :focus) {
+        --background-color: #{$color-white};
+        --color: #{$color-primary};
+        --border: 2px solid #{$color-primary};
+    }
+
+    &--outline {
+        --border: 2px solid #{$color-primary};
+        --background-color: transparent;
+        --color: #{$color-primary};
+        --pad-inline: #{$size-14};
+        --pad-block: #{$size-6};
+
+        &:is(:hover, :focus) {
+            --background-color: #{$color-primary};
+            --color: #{$color-white};
+        }
+    }
+}
+
+.learn-more-btn {
+    display: inline-block;
+}

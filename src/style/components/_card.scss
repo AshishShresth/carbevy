@@ -1,0 +1,43 @@
+@use "../abstracts" as *;
+
+
+.card {
+
+    &:hover {
+        .card__icon {
+            background-color: $color-primary;
+            color: $color-white;
+            box-shadow: $shadow-primary;
+            transition: all $transition-duration-slow;
+        }
+    }
+
+    &__icon {
+        width: 77px;
+        height: 77px;
+        margin-inline: auto;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(244, 244, 244);
+        border: 2px solid $color-white;
+        box-shadow: $shadow-gray;
+        color: $color-primary;
+        border-radius: $radius-5;
+
+        svg {
+            transition: all $transition-duration-slow;
+        }
+    }
+
+    &__title {
+        margin-block-start: clamp(20px, 5vw, 40px);
+    }
+
+    &__desc {
+        width: min(100%, 240px);
+        margin-inline: auto;
+        margin-block-start: $size-8;
+    }
+}

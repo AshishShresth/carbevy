@@ -1,0 +1,77 @@
+@use "../abstracts" as *;
+
+
+.hero {
+    @include mq(large) {
+        margin-block-start: -95px;
+    }
+
+    &__img {
+        width: 100%;
+        justify-items: end;
+
+        img {
+            width: 60%;
+
+            @include mq(large) {
+                width: auto;
+            }
+        }
+    }
+
+    &__content {
+        width: 100%;
+        padding-block-start: 60px;
+
+        .flow {
+            --flow-spacer: #{$size-5};
+        }
+
+        &-inner {
+            width: min(100%, 605px);
+        }
+
+        &-title {
+            line-height: 1.2;
+        }
+
+        &-video {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: $size-3;
+            border: 0;
+            background: transparent;
+            transition: color $transition-duration-slow;
+            cursor: pointer;
+            padding: 0;
+            width: fit-content;
+
+            &:is(:hover, :focus-within) {
+                color: $color-primary;
+            }
+        }
+    }
+}
+
+.why-carbevy {
+    padding-block: clamp(5rem, 4.285714285714286rem + 3.571428571428571vw, 7.5rem);
+
+    &.flow {
+        --flow-spacer: clamp(1.875rem, 1.1607142857142858rem + 3.571428571428571vw, 4.375rem);
+    }
+
+    .learn-more-btn {
+        text-decoration: underline;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $size-15;
+
+        @include mq(medium) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

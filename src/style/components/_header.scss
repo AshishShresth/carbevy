@@ -114,25 +114,6 @@
         }
     }
 
-    &__cta-btn {
-        display: block;
-        color: $color-primary;
-        font-size: $font-size-8;
-        font-weight: $font-weight-600;
-        line-height: 1;
-        padding-inline: $size-14;
-        padding-block: $size-6;
-        border-radius: $radius-5;
-        background-color: $color-white;
-        transition: color 0.3s, background-color 0.3s;
-        border: 2px solid $color-primary;
-
-        &:is(:hover, :focus) {
-            background-color: $color-primary;
-            color: $color-white;
-        }
-    }
-
     &__navigation {
         --_gap: var(--gap, clamp(1.25rem, 0.625rem + 3.125vw, 4.375rem));
         display: flex;
@@ -146,7 +127,7 @@
             font-size: $font-size-7;
             font-weight: $font-weight-400;
             line-height: 1;
-            transition: color 0.3s;
+            transition: color $transition-duration-slow;
 
             &:hover {
                 color: $color-primary;

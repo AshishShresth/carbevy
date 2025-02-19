@@ -79,7 +79,7 @@
                     </ul>
                 </nav>
                 <div class="header__cta">
-                    <a href="#" class="header__cta-btn">
+                    <a href="#" class="header__cta-btn button button--outline">
                         Log in
                     </a>
                 </div>
@@ -89,6 +89,150 @@
             </div>
         </div>
     </header>
+    <main class="content-grid">
+        <div id="hero" class="hero stack full-width content-grid">
+            <div class="hero__img full-width content-grid">
+                <img class="full-width" src="./assets/hero-img.png" alt="">
+            </div>
+            <div class="hero__content breakout">
+                <div class="hero__content-inner flow">
+                    <h1 class="hero__content-title font-size-28">
+                        Take control of your car buying journey
+                    </h1>
+                    <p class="font-size-10 color-gray-neutral">
+                        Educated yourself to save time and money.
+                    </p>
+                    <a href="#"
+                        class="hero__content-video font-secondary font-size-10 margin-block-start-13 color-dark">
+                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect opacity="0.4" x="3.17032" y="3.17076" width="45.6585" height="45.6585" rx="22.8293"
+                                fill="#B1EED8" />
+                            <rect opacity="0.2" width="52" height="52" rx="26" fill="#B1EED8" />
+                            <rect x="6.97542" y="6.97563" width="38.0488" height="38.0488" rx="19.0244"
+                                fill="#B1EED8" />
+                            <path d="M21.4453 18.9123L34.4261 26.4067L21.4453 33.9012L21.4453 18.9123Z"
+                                fill="#679F8B" />
+                        </svg>
+                        <span>Watch Video</span>
+                    </a>
+                </div>
+                <div class="search">
+                    <div class="search__by">
+                        <label for="make">
+                            <input type="radio" name="search-by" id="make" class="sr-only" placeholder="Search by Make"
+                                checked>
+                            <span>Search by Make</span>
+                        </label>
+                        <label for="budget">
+                            <input type="radio" name="search-by" id="budget" class="sr-only"
+                                placeholder="Search by Budget">
+                            <span>Search by Budget</span>
+                        </label>
+                    </div>
+                    <div class="search__field box-shadow-gray">
+                        <input type="text" id="search" placeholder="Select your make or modal" class="search__input">
+                        <button class="search__btn button box-shadow-primary">
+                            Find my Car
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="why-carbevy section flow text-center">
+            <h2 class="section__title font-size-15">Why CarBevy? </h2>
+            <div class="why-carbevy__content">
+                <div class="card">
+                    <div class="card__icon ">
+                        <svg width="43" height="41" viewBox="0 0 43 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.75565 14.6629L19.0226 3.56644L33.2895 14.6629V32.1003C33.2895 32.9411 32.9555 33.7475 32.3609 34.3421C31.7663 34.9367 30.9599 35.2707 30.1191 35.2707H7.92607C7.08522 35.2707 6.27881 34.9367 5.68424 34.3421C5.08967 33.7475 4.75565 32.9411 4.75565 32.1003V14.6629Z"
+                                stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M14.2669 35.2707V19.4186H23.7782V35.2707" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M39.3694 21.3888C38.8646 20.8723 38.2654 20.4625 37.6058 20.1829C36.9462 19.9034 36.2393 19.7595 35.5253 19.7595C34.8114 19.7595 34.1044 19.9034 33.4448 20.1829C32.7853 20.4625 32.186 20.8723 31.6813 21.3888L30.6338 22.4603L29.5863 21.3888C28.5668 20.3459 27.1841 19.76 25.7423 19.76C24.3005 19.76 22.9178 20.3459 21.8983 21.3888C20.8788 22.4317 20.306 23.8462 20.306 25.3211C20.306 26.7959 20.8788 28.2104 21.8983 29.2533L22.9457 30.3248L30.6338 38.1894L38.3219 30.3248L39.3694 29.2533C39.8743 28.737 40.2749 28.124 40.5482 27.4493C40.8215 26.7746 40.9621 26.0514 40.9621 25.3211C40.9621 24.5907 40.8215 23.8675 40.5482 23.1928C40.2749 22.5181 39.8743 21.9051 39.3694 21.3888Z"
+                                fill="#B1EDD7" stroke="#B1EDD7" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="card__title font-primary font-size-10">Find a car you love</h3>
+                    <p class="card__desc font-size-7 color-gray-darker">Go ahead choose your car and the features you
+                        enjoy
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card__icon ">
+                        <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2_359)">
+                                <path
+                                    d="M24.5757 45.6331V42.5617C24.5757 40.9325 24.934 39.37 25.5717 38.218C26.2095 37.066 27.0744 36.4188 27.9763 36.4188H34.7774C35.6793 36.4188 36.5442 37.066 37.1819 38.218C37.8196 39.37 38.1779 40.9325 38.1779 42.5617V45.6331"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M31.3726 34.302C28.3434 34.302 25.8878 31.8464 25.8878 28.8173C25.8878 25.7882 28.3434 23.3326 31.3726 23.3326C34.4017 23.3326 36.8573 25.7882 36.8573 28.8173C36.8573 31.8464 34.4017 34.302 31.3726 34.302Z"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                            <path
+                                d="M41.6164 13.4376C41.6164 13.9128 41.419 14.3685 41.0675 14.7045C40.7161 15.0405 40.2394 15.2293 39.7424 15.2293H28.498L24.7499 18.8126V4.47921C24.7499 4.00403 24.9474 3.54831 25.2988 3.2123C25.6503 2.8763 26.127 2.68753 26.624 2.68753H39.7424C40.2394 2.68753 40.7161 2.8763 41.0675 3.2123C41.419 3.54831 41.6164 4.00403 41.6164 4.47921V13.4376Z"
+                                fill="#B1EDD7" stroke="#B1EDD7" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <g clip-path="url(#clip1_2_359)">
+                                <path
+                                    d="M22.3777 38.1735V35.102C22.3777 33.4728 22.0194 31.9103 21.3817 30.7583C20.744 29.6063 19.879 28.9591 18.9772 28.9591H12.1761C11.2742 28.9591 10.4093 29.6063 9.77157 30.7583C9.13384 31.9103 8.77557 33.4728 8.77557 35.102V38.1735"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M15.5809 26.8424C18.6101 26.8424 21.0656 24.3868 21.0656 21.3576C21.0656 18.3285 18.6101 15.8729 15.5809 15.8729C12.5518 15.8729 10.0962 18.3285 10.0962 21.3576C10.0962 24.3868 12.5518 26.8424 15.5809 26.8424Z"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2_359">
+                                    <rect width="27.6474" height="27.6473" fill="currentColor"
+                                        transform="matrix(-1 0 0 1 46.9535 17.9901)" />
+                                </clipPath>
+                                <clipPath id="clip1_2_359">
+                                    <rect width="27.6473" height="27.6473" fill="currentColor"
+                                        transform="translate(0 10.5304)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </div>
+                    <h3 class="card__title font-primary font-size-10">Find a car you love</h3>
+                    <p class="card__desc font-size-7 color-gray-darker">Go ahead choose your car and the features you
+                        enjoy
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card__icon ">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2_356)">
+                                <path
+                                    d="M8.64997 21.3501C5.84306 17.0217 4.09057 12.0954 3.5333 6.96675C3.49165 6.50586 3.54643 6.04135 3.69414 5.60279C3.84185 5.16423 4.07925 4.76123 4.39125 4.41945C4.70324 4.07767 5.08298 3.8046 5.50629 3.61762C5.9296 3.43064 6.3872 3.33385 6.84997 3.33341H11.85C12.6588 3.32545 13.443 3.61188 14.0562 4.1393C14.6695 4.66672 15.0701 5.39916 15.1833 6.20008C15.3943 7.80019 15.7857 9.37129 16.35 10.8834C16.5742 11.48 16.6227 12.1283 16.4898 12.7515C16.3569 13.3748 16.0481 13.9469 15.6 14.4001L13.4833 16.5167M17.8 22.1834C19.4914 23.8763 21.403 25.3339 23.4833 26.5167L25.6 24.4001C26.0531 23.952 26.6252 23.6432 27.2485 23.5102C27.8718 23.3773 28.5201 23.4258 29.1166 23.6501C30.6288 24.2143 32.1999 24.6057 33.8 24.8167C34.6009 24.93 35.3333 25.3305 35.8608 25.9438C36.3882 26.5571 36.6746 27.3412 36.6666 28.1501V33.1501C36.6685 33.6142 36.5734 34.0737 36.3875 34.499C36.2015 34.9243 35.9288 35.3061 35.5868 35.6199C35.2447 35.9336 34.8409 36.1725 34.4012 36.3213C33.9615 36.47 33.4956 36.5252 33.0333 36.4834C27.9047 35.9261 22.9783 34.1737 18.65 31.3667C16.6421 30.0918 14.7808 28.5995 13.1 26.9167L17.8 22.1834Z"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M38.3333 1.66672L1.66663 38.3334" stroke="#B1EDD7" stroke-width="4"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2_356">
+                                    <rect width="40" height="40" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </div>
+                    <h3 class="card__title font-primary font-size-10">Find a car you love</h3>
+                    <p class="card__desc font-size-7 color-gray-darker">Go ahead choose your car and the features you
+                        enjoy
+                    </p>
+                </div>
+            </div>
+            <a href="#" class="learn-more-btn">Learn more</a>
+        </div>
+    </main>
 </body>
 
 </html>
