@@ -1,0 +1,5 @@
+@use "../abstracts/" as *;
+
+.flow>*+* {
+    margin-top: var(--flow-spacer, #{$size-6});
+}

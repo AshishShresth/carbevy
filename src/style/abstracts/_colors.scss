@@ -1,0 +1,28 @@
+@use "sass:map";
+// for creating utility classes
+$colors: (
+    "white": #ffffff,
+    "primary": rgba(255, 83, 16, 1),
+    "dark": rgba(35, 31, 32, 1),
+    "accent": rgba(177, 238, 216, 1),
+    "gray-dark": rgba(68, 68, 68, 1),
+    "gray-medium": rgba(136, 142, 146, 1),
+    "gray-light": rgba(165, 165, 165, 1),
+    "gray-lighter": rgba(214, 214, 214, 1),
+    "gray-darker": rgba(115, 115, 115, 1),
+    "secondary": rgba(103, 159, 139, 1),
+    "gray-neutral": rgba(101, 101, 101, 1),
+);
+
+// for use in the code base
+$color-white: map.get($colors, "white");
+$color-primary: map.get($colors, "primary");
+$color-dark: map.get($colors, "dark");
+$color-accent: map.get($colors, "accent");
+$color-gray-dark: map.get($colors, "gray-dark");
+$color-gray-medium: map.get($colors, "gray-medium");
+$color-gray-light: map.get($colors, "gray-light");
+$color-gray-lighter: map.get($colors, "gray-lighter");
+$color-gray-darker: map.get($colors, "gray-darker");
+$color-secondary: map.get($colors, "secondary");
+$color-gray-neutral: map.get($colors, "gray-neutral");

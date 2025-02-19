@@ -1,0 +1,36 @@
+@use "../abstracts" as *;
+
+body {
+    font-family: $body-font-family;
+    font-size: $body-font-size;
+    font-weight: $body-font-weight;
+    color: $body-text-color;
+    background-color: $body-background-color;
+    line-height: $body-line-height;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    color: $link-color;
+}
+
+a:is(:hover, :focus) {
+    color: $link-hover-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
+    color: $heading-color;
+}

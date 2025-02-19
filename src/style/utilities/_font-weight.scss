@@ -1,0 +1,7 @@
+@use "../abstracts/" as *;
+
+@each $weight-name, $weight-value in $font-weights {
+    .font-weight-#{$weight-name} {
+        font-weight: $weight-value;
+    }
+}

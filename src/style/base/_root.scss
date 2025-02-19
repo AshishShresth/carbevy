@@ -1,0 +1,10 @@
+@use "../abstracts" as *;
+
+:root {
+    --font-primary: #{$font-primary};
+    --font-secondary: #{$font-secondary};
+
+    @each $color-name, $color-value in $colors {
+        --color-#{$color-name}: #{$color-value};
+    }
+}

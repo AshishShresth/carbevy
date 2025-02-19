@@ -1,0 +1,11 @@
+@use "../abstracts/" as *;
+
+@each $color-name, $color-value in $colors {
+    .color-#{$color-name} {
+        color: $color-value;
+    }
+
+    .bg-#{$color-name} {
+        background-color: $color-value;
+    }
+}

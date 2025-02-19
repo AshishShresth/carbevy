@@ -1,0 +1,24 @@
+@use "../abstracts/" as *;
+
+.stack {
+    --_position: var(--position, center);
+    display: grid;
+    grid-template-areas: "stack";
+    place-items: var(--_position);
+
+    >* {
+        grid-area: stack;
+    }
+
+    &--items-end {
+        --position: end;
+    }
+
+    &--items-start {
+        --position: start;
+    }
+
+    &--items-center {
+        --position: center;
+    }
+}

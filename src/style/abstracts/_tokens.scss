@@ -1,0 +1,16 @@
+@use "typography" as *;
+@use "colors" as *;
+
+$body-font-family: var(--font-primary);
+$body-font-size: $font-size-8;
+$body-line-height: 1.5;
+$body-font-weight: $font-weight-400;
+$body-text-color: var(--color-gray-neutral);
+$body-background-color: var(--color-white);
+
+$link-color: var(--color-primary);
+$link-hover-color: var(--color-accent);
+
+$heading-font-family: var(--font-secondary);
+$heading-font-weight: $font-weight-700;
+$heading-color: var(--color-dark);

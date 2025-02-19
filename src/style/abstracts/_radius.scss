@@ -1,0 +1,8 @@
+@use "sass:map";
+// for creating utility classes
+$radius: (
+    5: 10px,
+);
+
+// for use in the code base
+$radius-5: map.get($radius, 5);

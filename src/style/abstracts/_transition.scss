@@ -1,0 +1,11 @@
+@use "easing" as *;
+
+// Transition durations
+$transition-duration-fast: 150ms;
+$transition-duration-base: 250ms;
+$transition-duration-slow: 350ms;
+
+// Common transitions
+$transition-base: all $transition-duration-base $ease-out;
+$transition-fast: all $transition-duration-fast $ease-out;
+$transition-slow: all $transition-duration-slow $ease-out;
