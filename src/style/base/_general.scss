@@ -20,6 +20,7 @@ body {
 a {
     color: $link-color;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:is(:hover, :focus) {
@@ -27,7 +28,7 @@ a:is(:hover, :focus) {
 }
 
 a[aria-current="page"] {
-    color: var(--color-primary);
+    color: $link-current-page-color;
 }
 
 h1,

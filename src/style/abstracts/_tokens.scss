@@ -9,7 +9,8 @@ $body-text-color: var(--color-gray-neutral);
 $body-background-color: var(--color-white);
 
 $link-color: var(--color-primary);
-$link-hover-color: var(--color-dark);
+$link-hover-color: var(--color-accent);
+$link-current-page-color: var(--color-primary);
 
 $heading-font-family: var(--font-secondary);
 $heading-font-weight: $font-weight-700;
