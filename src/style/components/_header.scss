@@ -99,10 +99,12 @@
         align-items: center;
         justify-content: flex-end;
         gap: $size-8;
-        width: min(100%, clamp(350px, 5vw, 514px));
+        max-width: 350px;
+        width: 100%;
 
-        @include mq(medium) {
+        @include mq(large) {
             justify-content: space-between;
+            max-width: 514px;
         }
     }
 
@@ -117,10 +119,16 @@
     &__navigation {
         --_gap: var(--gap, clamp(1.25rem, 0.625rem + 3.125vw, 4.375rem));
         display: flex;
+        align-items: flex-start;
         gap: var(--_gap);
         list-style: none;
         margin: 0;
         padding: 0;
+
+        @include mq(medium) {
+            align-items: center;
+
+        }
 
         a {
             color: $color-gray-dark;
@@ -128,6 +136,9 @@
             font-weight: $font-weight-400;
             line-height: 1;
             transition: color $transition-duration-slow;
+            display: flex;
+            align-items: center;
+            gap: $size-2;
 
             &:hover {
                 color: $color-primary;
