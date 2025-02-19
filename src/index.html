@@ -10,10 +10,85 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
-    <h1>Hello</h1>
+    <a class="skip-to-content" href="#hero">Skip to content</a>
+    <div class="header-notice relative">
+        <div id="header-notice__content" data-visible="true" class="header-notice__content bg-black">
+            <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.19043 18.8274L15.3808 10.3762L8.19043 1.92499" stroke="#B1EDD7" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M1 10.3763H15.3807" stroke="#B1EDD7" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            <p class="header-notice__text font-secondary color-white">
+                Claim $250 towards your new car
+            </p>
+            <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.77643 1.93137L1.58612 10.3826L8.77643 18.8337" stroke="#B1EDD7" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M15.9668 10.3827H1.58605" stroke="#B1EDD7" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </div>
+        <button class="header-notice__toggle" aria-label="Close notice" aria-controls="header-notice__content"
+            aria-expanded="true">
+            <span class="close-icon">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.34001 2.21832C9.43607 2.12924 9.51355 2.02221 9.56803 1.90334C9.6225 1.78448 9.65291 1.65611 9.65751 1.52555C9.6621 1.395 9.6408 1.26483 9.59482 1.14247C9.54884 1.0201 9.47907 0.907946 9.38951 0.812399C9.29995 0.716852 9.19234 0.639787 9.07284 0.585604C8.95333 0.53142 8.82427 0.501178 8.69301 0.496606C8.56176 0.492035 8.43088 0.513222 8.30786 0.558958C8.18483 0.604694 8.07207 0.674084 7.97601 0.763165L5.05001 3.47653L2.32201 0.565232C2.13948 0.379279 1.89102 0.271772 1.6298 0.265713C1.36859 0.259654 1.11536 0.355525 0.924315 0.532812C0.733265 0.710099 0.619567 0.954719 0.607549 1.21433C0.595531 1.47394 0.686148 1.72792 0.860009 1.92192L3.58801 4.83222L0.661009 7.54559C0.561554 7.63376 0.480818 7.74082 0.423541 7.86047C0.366264 7.98011 0.333603 8.10994 0.327474 8.24231C0.321346 8.37469 0.341875 8.50695 0.387855 8.63133C0.433836 8.7557 0.50434 8.86968 0.595228 8.96658C0.686115 9.06347 0.795553 9.14133 0.917114 9.19557C1.03867 9.24981 1.16991 9.27934 1.3031 9.28243C1.4363 9.28552 1.56877 9.2621 1.69274 9.21356C1.81671 9.16501 1.92968 9.09232 2.02501 8.99974L4.95101 6.28737L7.67901 9.19768C7.76709 9.29842 7.87467 9.3805 7.99532 9.43902C8.11598 9.49753 8.24724 9.53129 8.38129 9.53827C8.51534 9.54526 8.64944 9.52533 8.77558 9.47967C8.90172 9.43401 9.01732 9.36356 9.11551 9.27251C9.21369 9.18147 9.29244 9.07169 9.34706 8.94973C9.40169 8.82778 9.43106 8.69613 9.43344 8.56263C9.43582 8.42914 9.41116 8.29654 9.36092 8.17273C9.31067 8.04892 9.23589 7.93644 9.14101 7.84199L6.41401 4.93168L9.34001 2.21832Z"
+                        fill="#B1EDD7" />
+                </svg>
+            </span>
+            <span class="open-icon">
+                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 1L6.5 6.11475L1 1" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </span>
+        </button>
+    </div>
+    <header class="content-grid">
+        <div class="header breakout">
+            <div class="header__logo">
+                <a href="#" class="leader__logo-img" aria-current="page">
+                    <img src="./assets/logo.png" alt="Carbevy">
+                </a>
+            </div>
+            <button class="mobile-nav-toggle color-dark" aria-controls="header-navigation">
+                <span class="sr-only" aria-expanded="false">Menu</span>
+            </button>
+            <div class="header__nav">
+                <nav>
+                    <ul id="header-navigation" class="header__navigation">
+                        <li>
+                            <a href="#">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                FAQ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__cta">
+                    <a href="#" class="header__cta-btn">
+                        Log in
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>

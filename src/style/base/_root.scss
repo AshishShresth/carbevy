@@ -3,6 +3,7 @@
 :root {
     --font-primary: #{$font-primary};
     --font-secondary: #{$font-secondary};
+    interpolate-size: allow-keywords;
 
     @each $color-name, $color-value in $colors {
         --color-#{$color-name}: #{$color-value};

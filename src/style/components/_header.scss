@@ -1,0 +1,176 @@
+@use "../abstracts" as *;
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $size-4;
+    padding-block: $size-13;
+
+    &-notice {
+        &__content {
+            align-items: center;
+            justify-content: center;
+            gap: $size-8;
+            display: none;
+            transition: all 0.5s ease-in-out;
+            block-size: 0;
+            padding-block: 0;
+            overflow: hidden;
+            transition-behavior: allow-discrete;
+
+            &[data-visible="true"] {
+                display: flex;
+                block-size: auto;
+                block-size: calc-size(auto, size);
+                padding-block: $size-5;
+
+                @starting-style {
+                    block-size: 0;
+                    padding-block: 0;
+                }
+            }
+
+            @include mq(medium) {
+                gap: $size-15
+            }
+        }
+
+        &__toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            transform: none;
+            right: $size-4;
+            border: 2px solid transparent;
+            aspect-ratio: 1/1;
+            width: $size-12;
+            height: $size-12;
+            background: $color-dark;
+            cursor: pointer;
+            transition: all 0.5s;
+
+            @include mq(medium) {
+                right: 32px;
+            }
+
+            span {
+                color: $color-accent;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .close-icon {
+                display: none;
+            }
+
+            .open-icon {
+                display: block;
+            }
+
+            &[aria-expanded="true"] {
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 100%;
+                background: transparent;
+                border-color: $color-accent;
+
+                .close-icon {
+                    display: block;
+                }
+
+                .open-icon {
+                    display: none;
+                }
+            }
+        }
+
+        &__text {
+            text-decoration: underline;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: $size-4;
+        width: min(100%, 514px);
+    }
+
+    &__cta-btn {
+        display: block;
+        color: $color-primary;
+        font-size: $font-size-8;
+        font-weight: $font-weight-600;
+        line-height: 1;
+        padding-inline: $size-14;
+        padding-block: $size-6;
+        border-radius: $radius-5;
+        background-color: $color-white;
+        transition: color 0.3s, background-color 0.3s;
+        border: 2px solid $color-primary;
+
+        &:is(:hover, :focus) {
+            background-color: $color-primary;
+            color: $color-white;
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        gap: 70px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        a {
+            color: $color-gray-dark;
+            font-size: $font-size-7;
+            font-weight: $font-weight-400;
+            line-height: 1;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+}
+
+@include mq(medium) {
+    .mobile-nav-toggle {
+        position: absolute;
+        z-index: 2000;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+        width: 1.5rem;
+        aspect-ratio: 1;
+        border: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        --toggle-icon: "menu";
+
+        &::before {
+            content: var(--toggle-icon);
+            text-rendering: optimizelegibility;
+            overflow-wrap: normal;
+            font: 1.5rem / 1.5rem "Material Icons";
+            text-transform: none;
+        }
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"] {
+        --toggle-icon: "close";
+    }
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
